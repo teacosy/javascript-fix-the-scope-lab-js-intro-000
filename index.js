@@ -18,24 +18,29 @@ function add2(n) {
   const two = 2
 }
 
+var theFunk = funkyFunction()
+return ‘FUNKY!’
+
+function funkyFunction() {
 var funkyFunction = function() {
   return function() {
     return "FUNKY!"
   }
 }
+1.	function outerFunction() {
+2.	var innerVariable = "I'm sort of a secret.";
+3.	 
+4.	return function innerScope() {
+5.	var inaccessible = "Nothing can touch me.";
+6.	 
+7.	return innerVariable;
+8.	}
+9.	}
+
 
 // We want to set theFunk equal to "FUNKY!" using our funkyFunction.
 // NOTE: you only need to modify the code below this line.
-var funky = funkyFunction
-var theFunk = funkyFunction()....
-var animal = 'dog';
-
-function makeZoo() {
-  var animal = 'cat';
-
-  console.log(`I think I'll put this ${animal} in the zoo.`);
+var theFunk = funkyFunction() {
+  return 'FUNKY!';
 }
-
-makeZoo(); // "I think I'll put this cat in the zoo."
-
-animal // "dog"
+}
